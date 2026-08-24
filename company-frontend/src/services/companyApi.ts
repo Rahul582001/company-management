@@ -5,7 +5,7 @@ import type {
   PaginatedCompanies,
 } from "../types/company";
 
-const API_URL = "http://localhost:3000/companies";
+const API_URL = `${import.meta.env.VITE_API_URL}/companies`;
 
 export const getCompanies = async (
   page = 1,
